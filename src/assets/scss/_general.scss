@@ -1,0 +1,36 @@
+// margin-spacer generator, eg. sm-margin(-top|right|bottom|left)
+@include spacer('no', $no-space, 'margin')
+@include spacer('sm', $sm-space, 'margin')
+@include spacer('md', $md-space, 'margin')
+@include spacer('lg', $lg-space, 'margin')
+@include spacer('xlg', $xlg-space, 'margin')
+@include spacer('xxlg', $xxlg-space, 'margin')
+@include spacer('xxlg', $xxlg-space, 'margin')
+
+// padding-spacer generator, eg. xxlg-padding(-top|right|bottom|left)
+@include spacer('no', $no-space, 'padding')
+@include spacer('sm', $sm-space, 'padding')
+@include spacer('md', $md-space, 'padding')
+@include spacer('lg', $lg-space, 'padding')
+@include spacer('xlg', $xlg-space, 'padding')
+@include spacer('xxlg', $xxlg-space, 'padding')
+
+// grid spacer
+.row {
+  &.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+
+    > [class*='columns'] {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+//F6 overrides
+.list-inline {
+  li {
+    display: inline-block;
+  }
+}

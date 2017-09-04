@@ -1,0 +1,25 @@
+@mixin spacer ($breakpoint, $value, $method, $negative: false) {
+  @if($negative == true) {
+    $value: -($value)
+  }
+
+  .#{$breakpoint}-#{$method} {
+    #{$method}: $value
+  }
+
+  .#{$breakpoint}-#{$method}-top {
+    #{$method}-top: $value
+  }
+
+  .#{$breakpoint}-#{$method}-right {
+    #{$method}-right: $value
+  }
+
+  .#{$breakpoint}-#{$method}-bottom {
+    #{$method}-bottom: $value
+  }
+
+  .#{$breakpoint}-#{$method}-left {
+    #{$method}-left: $value
+  }
+}
