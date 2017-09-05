@@ -1,5 +1,4 @@
 {{!-- This is the base layout for your project, and will be used on every page. --}}
-
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
@@ -11,20 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   </head>
   <body>
-    <div class="row text-center">
-      <div class="large-12 columns lg-padding-top no-padding-bottom">
-        <ul class="list-inline no-margin">
-          <li><a class="md-padding" href="./landing-a.html">Landing A</a></li>
-          <li><a class="md-padding" href="./landing-b.html">Landing B</a></li>
-          <li><a class="md-padding" href="/">Details</a></li>
-        </ul>
-        <hr class="lg-margin-top lg-margin-bottom">
-      </div>
-    </div>
-
+  {{> ab }}
   {{!-- Pages we create in the src/pages/ folder are inserted here when the flattened page is created. --}}
     {{> body}}
-
     <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>
