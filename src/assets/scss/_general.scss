@@ -26,6 +26,16 @@
       padding-right: 0;
     }
   }
+
+  &.small-gutter {
+    margin-left: -($sm-space);
+    margin-right: -($sm-space);
+
+    > [class*='columns'] {
+      padding-left: $sm-space;
+      padding-right: $sm-space
+    }
+  }
 }
 
 //F6 overrides
@@ -33,4 +43,8 @@
   li {
     display: inline-block;
   }
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
